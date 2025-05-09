@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
     android:shape="oval">
-    <solid android:color="#FFE082"/>
+    android:text="KitaCMU: Para sa estudyanteng madiskarte at masipag!">
+
+    <solid android:color="#FFE082" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 </LinearLayout>
