@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "192229965615",
+    "project_id": "kitacmu",
+    "storage_bucket": "kitacmu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192229965615:android:7f4c52a2f57e1066906bda",
+        "android_client_info": {
+          "package_name": "com.kitakits.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABEEV4RBBrbwN9nW5zMxn6yDjCU0ZPAbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
