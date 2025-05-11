@@ -1,0 +1,98 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:cardCornerRadius="15dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Left Image -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:background="#CCCCCC"
+            android:src="@drawable/plate"
+            android:contentDescription="@string/job_image_desc" />
+
+        <!-- Middle Content -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/jobTitle"
+                android:text="Math Tutor"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/jobPoster"
+                android:text="Learn Files"
+                android:textColor="#777"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/jobPay"
+                android:text="250 (each Session)"
+                android:textColor="#1B5E20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/jobLocation"
+                android:text="College Park"
+                android:textColor="#555"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Right Action Buttons -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnStar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_star"
+                android:contentDescription="@string/star_job" />
+
+            <ImageButton
+                android:id="@+id/btnFlag"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_flag"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/flag_job" />
+
+            <ImageButton
+                android:id="@+id/btnSave"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_bookmark_outline"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/save_job" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

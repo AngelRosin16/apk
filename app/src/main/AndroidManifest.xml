@@ -32,6 +32,9 @@
             android:name=".SignUpActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".MainActivity" />
+
     </application>
 
 </manifest>

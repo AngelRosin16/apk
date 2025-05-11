@@ -27,8 +27,8 @@ public class SignUpActivity extends AppCompatActivity {
 
         // Bind views
         emailInput = findViewById(R.id.newemail);
-        passwordInput = findViewById(R.id.new_password); // Add this ID in XML
-        confirmPasswordInput = findViewById(R.id.confirm_password); // Add this ID in XML
+        passwordInput = findViewById(R.id.new_password);
+        confirmPasswordInput = findViewById(R.id.confirm_password);
 
         signupButton = findViewById(R.id.button_register);
 
@@ -54,7 +54,10 @@ public class SignUpActivity extends AppCompatActivity {
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         Toast.makeText(this, "Account created successfully!", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(SignUpActivity.this, WelcomeActivity.class));
+
+                        // ✅ Go to MainActivity after successful sign-up
+                        Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                        startActivity(intent);
                         finish();
                     } else {
                         Toast.makeText(this, "Sign up failed: " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_LONG).show();
