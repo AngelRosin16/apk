@@ -7,92 +7,92 @@
     android:elevation="4dp">
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:padding="12dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
 
         <!-- Left Image -->
         <ImageView
             android:layout_width="80dp"
             android:layout_height="60dp"
             android:background="#CCCCCC"
-            android:src="@drawable/plate"
-            android:contentDescription="@string/job_image_desc" />
+            android:contentDescription="@string/job_image_desc"
+            android:src="@drawable/plate" />
 
         <!-- Middle Content -->
         <LinearLayout
-            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
-            android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/jobTitle"
-                android:text="Math Tutor"
-                android:textStyle="bold"
-                android:textSize="16sp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Math Tutor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/jobPoster"
-                android:text="Learn Files"
-                android:textColor="#777"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Learn Files"
+                android:textColor="#777" />
 
             <TextView
                 android:id="@+id/jobPay"
-                android:text="250 (each Session)"
-                android:textColor="#1B5E20"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="250 (each Session)"
+                android:textColor="#1B5E20" />
 
             <TextView
                 android:id="@+id/jobLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="College Park"
                 android:textColor="#555"
-                android:textSize="12sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:textSize="12sp" />
         </LinearLayout>
 
         <!-- Right Action Buttons -->
         <LinearLayout
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/btnStar"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                app:srcCompat="@drawable/ic_star"
-                android:contentDescription="@string/star_job" />
+                android:contentDescription="@string/star_job"
+                app:srcCompat="@drawable/ic_star" />
 
             <ImageButton
                 android:id="@+id/btnFlag"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                app:srcCompat="@drawable/ic_flag"
                 android:layout_marginTop="8dp"
-                android:contentDescription="@string/flag_job" />
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/flag_job"
+                app:srcCompat="@drawable/ic_flag" />
 
             <ImageButton
                 android:id="@+id/btnSave"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                app:srcCompat="@drawable/ic_bookmark_outline"
                 android:layout_marginTop="8dp"
-                android:contentDescription="@string/save_job" />
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/save_job"
+                app:srcCompat="@drawable/ic_bookmark_outline" />
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.appcompat)
     implementation(libs.firebase.auth)
+    implementation(libs.androidx.activity)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -59,6 +60,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+
 
     //Firebase
     implementation(platform(libs.firebase.bom))
@@ -68,4 +71,9 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("com.google.android.material:material:1.11.0")
+    implementation ("com.google.firebase:firebase-firestore:24.9.1")
+    implementation ("com.google.android.material:material:1.11.0")
+    implementation ("com.google.android.material:material:1.11.0") // or
+    implementation ("com.google.android.material:material:1.5.0")
+
 }

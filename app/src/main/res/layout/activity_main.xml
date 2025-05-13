@@ -65,7 +65,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/ads"
             android:scaleType="centerCrop"
-            android:contentDescription="@string/banner_ads_description"/>
+            android:contentDescription="@string/ads_description"/>
     </androidx.cardview.widget.CardView>
 
     <!-- Job Count and Subtitle -->
@@ -85,7 +85,7 @@
             android:textColor="#00695C"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/job_count"/>
+            android:contentDescription="@string/banner_ads_description"/>
         <TextView
             android:id="@+id/jobSubtitle"
             android:text="@string/job_subtitle"
@@ -113,6 +113,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="#FFFFFF"
         app:itemIconTint="@color/bottom_nav_selector"
         app:itemTextColor="@color/bottom_nav_selector"

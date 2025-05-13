@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="150dp"
         android:text="KitaCMU: Para sa estudyanteng madiskarte at masipag!"
         android:textColor="#FFFFFF"
         android:textSize="14sp"

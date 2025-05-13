@@ -31,7 +31,7 @@
         android:layout_weight="1"
         android:orientation="vertical"
         android:padding="24dp"
-        android:layout_marginTop="-24dp"
+        android:layout_marginTop="5dp"
         android:clipToOutline="true"
         android:elevation="8dp"
         android:layout_gravity="bottom"
@@ -43,11 +43,36 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Registration"
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#006D66"
             android:layout_marginBottom="24dp" />
+
+        <!-- Add after logo, before email input -->
+        <RadioGroup
+            android:id="@+id/userTypeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radioJobSeeker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Seeker"
+                android:textColor="#006D66"/>
+
+            <RadioButton
+                android:id="@+id/radioJobPoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Poster"
+                android:textColor="#006D66"
+                android:layout_marginStart="24dp"/>
+        </RadioGroup>
 
         <EditText
             android:id="@+id/newemail"
